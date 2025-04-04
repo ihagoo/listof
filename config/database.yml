@@ -82,8 +82,8 @@ production:
   primary: &primary_production
     <<: *default
     database: listof_production
-    username: listof
-    password: <%= ENV["LISTOF_DATABASE_PASSWORD"] %>
+    username: ihago
+    password: 8843
   cache:
     <<: *primary_production
     database: listof_production_cache
