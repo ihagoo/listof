@@ -6,5 +6,5 @@
   <%= link_to "Editar esse jogo", edit_game_path(@game) %> |
   <%= link_to "Voltar para jogos", games_path %>
 
-  <%= button_to "Remover esse jogo", @game, data: { turbo_method: :delete, turbo_confirm: "Tem certeza?" } %>
+  <%= button_to "Remover esse jogo", @game, method: :delete, data: { turbo_confirm: "Tem certeza ?"} %>
 </div>

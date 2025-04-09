@@ -6,5 +6,5 @@
   <%= link_to "Editar esse filme", edit_movie_path(@movie) %> |
   <%= link_to "Voltar para filmes", movies_path %>
 
-  <%= button_to "Remover esse filme", @movie, data: { turbo_method: :delete, turbo_confirm: "Tem certeza?" } %>
+  <%= button_to "Remover esse filme", @movie, method: :delete, data: { turbo_confirm: "Tem certeza ?"} %>
 </div>
