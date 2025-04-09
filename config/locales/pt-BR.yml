@@ -9,6 +9,7 @@ pt-BR:
     models:
       movie: "filme"
       serie: "série"
+      game: "jogo"
     attributes:
       movie:
         name: "Nome"
@@ -20,6 +21,14 @@ pt-BR:
         name: "Nome"
         gender: "Gênero"
         status: "Status"
+        assessment: "Avaliação"
+        comment: "Comentário"
+      game:
+        name: "Nome"
+        platform: "Plataforma"
+        gender: "Gênero"
+        status: "Status"
+        difficulty: "Dificuldade"
         assessment: "Avaliação"
         comment: "Comentário"
   date:
