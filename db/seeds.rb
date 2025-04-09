@@ -1,9 +1,31 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+50.times do |i|
+  Movie.create!(
+    name: "Filme #{i + 1}",
+    gender: [ "Ação", "Comédia", "Drama" ].sample,
+    status: [ "Visto", "Não Visto" ].sample,
+    assessment: rand(1..5),
+    comment: "Comentário do filme #{i + 1}"
+  )
+end
+
+50.times do |i|
+  Serie.create!(
+    name: "Série #{i + 1}",
+    gender: [ "Ação", "Comédia", "Drama" ].sample,
+    status: [ "Visto", "Não Visto" ].sample,
+    assessment: rand(1..5),
+    comment: "Comentário da série #{i + 1}"
+  )
+end
+
+50.times do |i|
+  Game.create!(
+    name: "Jogo #{i + 1}",
+    platform: [ "PC", "Mega Drive", "Super Nintendo" ].sample,
+    gender: [ "Corrida", "RPG", "Arcade" ].sample,
+    status: [ "Zerado", "Jogando", "Dessistido" ].sample,
+    difficulty: [ "Fácil", "Médio", "Difícil" ].sample,
+    assessment: rand(1..5),
+    comment: "Comentário do jogo #{i + 1}"
+  )
+end

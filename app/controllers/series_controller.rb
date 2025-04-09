@@ -3,7 +3,7 @@ class SeriesController < ApplicationController
 
   # GET /series or /series.json
   def index
-    @series = Serie.all
+    @series = Serie.paginate(page: params[:page], per_page: 5)
   end
 
   # GET /series/1 or /series/1.json
