@@ -8,7 +8,7 @@ Com esta aplicação você pode cadastrar, visualizar, editar e excluir **filmes
 ## 🚀 Tecnologias
 
 - [Ruby on Rails](https://rubyonrails.org/)
-- [PostgreSQL](https://www.postgresql.org/) 16.8
+- [PostgreSQL](https://www.postgresql.org/)
 - [Hotwire](https://hotwired.dev/)
 
 ---
@@ -46,5 +46,5 @@ rails db:migrate
 
 # Rode o servidor
 rails server
-
+```
 Acesse em: http://localhost:3000
