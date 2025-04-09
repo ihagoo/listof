@@ -20,7 +20,8 @@ class GamesControllerTest < ActionDispatch::IntegrationTest
       post games_url, params: { game: { assessment: @game.assessment, comment: @game.comment, difficulty: @game.difficulty, gender: @game.gender, name: @game.name, platform: @game.platform, status: @game.status } }
     end
 
-    assert_redirected_to game_url(Game.last)
+    created_game = Game.order(:created_at).last
+    assert_redirected_to game_url(created_game)
   end
 
   test "should show game" do

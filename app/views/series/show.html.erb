@@ -6,5 +6,5 @@
   <%= link_to "Editar essa série", edit_serie_path(@serie) %> |
   <%= link_to "Voltar para séries", series_path %>
 
-  <%= button_to "Remover essa série", @serie, method: :delete %>
+  <%= button_to "Remover essa série", @serie, data: { turbo_method: :delete, turbo_confirm: "Tem certeza?" } %>
 </div>

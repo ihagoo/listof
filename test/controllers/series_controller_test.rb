@@ -20,7 +20,8 @@ class SeriesControllerTest < ActionDispatch::IntegrationTest
       post series_url, params: { serie: { assessment: @serie.assessment, comment: @serie.comment, gender: @serie.gender, name: @serie.name, status: @serie.status } }
     end
 
-    assert_redirected_to serie_url(Serie.last)
+    created_serie = Serie.order(:created_at).last
+    assert_redirected_to serie_url(created_serie)
   end
 
   test "should show serie" do
