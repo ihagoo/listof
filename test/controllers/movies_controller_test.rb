@@ -20,7 +20,8 @@ class MoviesControllerTest < ActionDispatch::IntegrationTest
       post movies_url, params: { movie: { assessment: @movie.assessment, comment: @movie.comment, gender: @movie.gender, name: @movie.name, status: @movie.status } }
     end
 
-    assert_redirected_to movie_url(Movie.last)
+    created_movie = Movie.order(:created_at).last
+    assert_redirected_to movie_url(created_movie)
   end
 
   test "should show movie" do
