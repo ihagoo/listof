@@ -25,7 +25,7 @@ class SeriesController < ApplicationController
 
     respond_to do |format|
       if @serie.save
-        format.html { redirect_to @serie, notice: "Serie was successfully created." }
+        format.html { redirect_to @serie, notice: "Série criada com sucesso." }
         format.json { render :show, status: :created, location: @serie }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class SeriesController < ApplicationController
   def update
     respond_to do |format|
       if @serie.update(serie_params)
-        format.html { redirect_to @serie, notice: "Serie was successfully updated." }
+        format.html { redirect_to @serie, notice: "Série atualizada com sucesso." }
         format.json { render :show, status: :ok, location: @serie }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class SeriesController < ApplicationController
     @serie.destroy!
 
     respond_to do |format|
-      format.html { redirect_to series_path, status: :see_other, notice: "Serie was successfully destroyed." }
+      format.html { redirect_to series_path, status: :see_other, notice: "Série removida com sucesso." }
       format.json { head :no_content }
     end
   end

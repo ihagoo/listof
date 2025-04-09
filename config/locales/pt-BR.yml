@@ -8,8 +8,15 @@ pt-BR:
           has_many: Não é possível excluir o registro pois existem %{record} dependentes
     models:
       movie: "filme"
+      serie: "série"
     attributes:
       movie:
+        name: "Nome"
+        gender: "Gênero"
+        status: "Status"
+        assessment: "Avaliação"
+        comment: "Comentário"
+      serie:
         name: "Nome"
         gender: "Gênero"
         status: "Status"
