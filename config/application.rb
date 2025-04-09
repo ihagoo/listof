@@ -20,6 +20,8 @@ module Listof
       g.orm :active_record, primary_key_type: :uuid
     end
 
+    config.i18n.default_locale = :'pt-BR'
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
