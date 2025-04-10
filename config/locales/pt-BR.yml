@@ -31,6 +31,13 @@ pt-BR:
         difficulty: "Dificuldade"
         assessment: "Avaliação"
         comment: "Comentário"
+  views:
+    pagination:
+      first: "&laquo; Primeira"
+      last: "Última &raquo;"
+      previous: "&lsaquo; Anterior"
+      next: "Próxima &rsaquo;"
+      truncate: "&hellip;"
   date:
     abbr_day_names:
     - dom
