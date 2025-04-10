@@ -36,7 +36,12 @@
     <%= form.textarea :comment %>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class="d-inline-flex gap-2">
+    <%= link_to movies_path, class: "btn btn-sm btn-outline-primary" do %>
+      <i class="bi bi-arrow-return-left"></i>
+    <% end %>
+    <%= form.button class: "btn btn-sm btn-outline-primary" do %>
+      <i class="bi bi-save"></i>
+    <% end %>
   </div>
 <% end %>
