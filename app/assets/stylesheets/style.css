@@ -1,6 +1,6 @@
 /* Tabela de itens */
 .table {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -34,4 +34,8 @@
 
 .pagination .page-link:hover {
   background-color: #e9f2ff;
+}
+
+.navbar .nav-link {
+  color: #ffffff;
 }
